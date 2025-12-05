@@ -1,0 +1,44 @@
+site_name: MkDocs-TACC Client
+site_description: Client for MkDocs-TACC
+site_author: TACC COA CMD
+site_url: https://tacc.github.io/mkdocs-tacc-client
+repo_url: https://github.com/TACC/mkdocs-tacc-client
+edit_uri: edit/main/docs/
+
+theme:
+  name: tacc_readthedocs
+  # "ReadTheDocs" Theme Features
+  logo: img/logo.svg
+  # "TACC" Theme Features
+  logo_svg_inject: true
+  portal_url: https://your-site.org
+  portal_name: your-site.org
+
+extra_css:
+  - css/extra.css
+
+markdown_extensions:
+  - extra
+  - admonition
+  - toc:
+      permalink: "" # i.e. `true` but without "¶"
+      permalink_class: headerlink fa fa-link
+      permalink_title: Link to Heading
+  # PyMdown Extensions
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.details
+  - pymdownx.blocks.html
+  - pymdownx.blocks.tab
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.saneheaders
+
+nav:
+  - Essentials:
+    - Overview: index.md
+    - External Website: https://example.com
+  - Another Category:
+    - Some Page: some-page.md
+
+plugins:
+  - search

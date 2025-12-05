@@ -1,0 +1,24 @@
+[build-system]
+requires = ["poetry-core>=1.5.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "mkdocs-tacc-client"
+version = "0.1.0"
+description = "Client for MkDocs-TACC"
+authors = [
+  { name = "TACC COA CMD", email = "coa-cmd@tacc.utexas.edu" }
+]
+maintainers = [
+  { name = "TACC COA CMD", email = "coa-cmd@tacc.utexas.edu" },
+  { name = "TACC ACI WMA", email = "wma-portals@tacc.utexas.edu" }
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "mkdocs-tacc[all] (>=0.6.0,<0.7.0)",
+]
+
+[project.urls]
+homepage = "https://TACC.github.io/mkdocs-tacc-client"
+github = "https://github.com/TACC/mkdocs-tacc-client"
