@@ -27,8 +27,8 @@ Follow [TACC's MkDocs "Testing: Test Locally" instructions](https://tacc.github.
 5. [Request][request] a review.\
     <sup>(a.k.a. create a "Pull Request")</sup>
 
-[issues]: https://github.com/TACC/mkdocs-tacc/issues
-[proposals]: https://github.com/TACC/mkdocs-tacc/pulls
+[issues]: https://github.com/DesignSafe-CI/ds-user-guide/issues
+[proposals]: https://github.com/DesignSafe-CI/ds-user-guide/pulls
 [test]: https://tacc.github.io/mkdocs-tacc/test/#test-locally
 
 [fork]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo

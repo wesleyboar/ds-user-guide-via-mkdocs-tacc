@@ -7,5 +7,5 @@ Deploys rely on [GitHub Pages](https://pages.github.com/) and [MkDocs command `g
     ```shell
     mkdocs gh-deploy
     ```
-2. Wait for [GitHub action](https://github.com/TACC/mkdocs-tacc-client/actions) to complete.
+2. Wait for [GitHub action](https://github.com/DesignSafe-CI/ds-user-guide/actions) to complete.
 3. Load https://tacc.github.io/mkdocs-tacc-client/.

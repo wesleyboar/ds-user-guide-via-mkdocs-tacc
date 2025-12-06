@@ -3,7 +3,7 @@ requires = ["poetry-core>=1.5.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [project]
-name = "mkdocs-tacc-client"
+name = "ds-user-guide"
 version = "0.1.0"
 description = "Client for MkDocs-TACC"
 authors = [
@@ -17,8 +17,10 @@ readme = "README.md"
 requires-python = ">=3.10,<3.13"
 dependencies = [
   "mkdocs-tacc[all] (>=0.6.0,<0.7.0)",
+  "mkdocs-exclude-search (>=0.6.6,<0.7.0)",
+  "mkdocs-include-markdown-plugin (>=5.1.0,<6.0.0)",
 ]
 
 [project.urls]
-homepage = "https://TACC.github.io/mkdocs-tacc-client"
-github = "https://github.com/TACC/mkdocs-tacc-client"
+homepage = "https://designsafe-ci.org/user-guide"
+github = "https://github.com/DesignSafe-CI/ds-user-guide"

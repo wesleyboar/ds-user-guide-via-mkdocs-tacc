@@ -1,21 +1,33 @@
-site_name: MkDocs-TACC Client
-site_description: Client for MkDocs-TACC
-site_author: TACC COA CMD
-site_url: https://tacc.github.io/mkdocs-tacc-client
-repo_url: https://github.com/TACC/mkdocs-tacc-client
-edit_uri: edit/main/docs/
+site_name: DesignSafe User Guide
+site_description: DesignSafe User Guide
+site_url: https://designsafe-ci.org/user-guide/
+repo_url: https://github.com/DesignSafe-CI/DS-User-Guide
+edit_uri: edit/main/user-guide/docs/
+# NOTE: Unrecognized by MkDocs, but recognized by ReadTheDocs theme
+site_favicon: https://www.designsafe-ci.org/favicon.ico
 
 theme:
   name: tacc_readthedocs
+  navigation_depth: 6
+  analytics:
+    gtag: G-D96RT1T24K
+  hljs_languages:
+    - python
+    - json
   # "ReadTheDocs" Theme Features
   logo: img/logo.svg
   # "TACC" Theme Features
   logo_svg_inject: true
-  portal_url: https://your-site.org
-  portal_name: your-site.org
+  portal_url: https://designsafe-ci.org/
+  portal_name: designsafe-ci.org
+  nav_name: User Guide
 
 extra_css:
-  - css/extra.css
+  - css/ds-docs.css
+
+extra_javascript:
+  - js/ds-docs.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # for pymdownx.arithmatex
 
 markdown_extensions:
   - extra
@@ -25,13 +37,15 @@ markdown_extensions:
       permalink_class: headerlink fa fa-link
       permalink_title: Link to Heading
   # PyMdown Extensions
-  - pymdownx.blocks.admonition
+  # - pymdownx.blocks.admonition # to use: disable `admonition`, convert `!!!`s
   - pymdownx.blocks.details
   - pymdownx.blocks.html
   - pymdownx.blocks.tab
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.saneheaders
+  - pymdownx.arithmatex:
+      generic: true # for mathjax
 
 nav:
   - Essentials:
@@ -42,3 +56,7 @@ nav:
 
 plugins:
   - search
+  - exclude-search:
+      exclude_unreferenced: true
+  - include-markdown
+
