@@ -19,3 +19,6 @@ Deploy to our test server:
 2. Commit the change to trigger the workflow.
 3. Wait for [GitHub action](https://github.com/DesignSafe-CI/ds-user-guide/actions) to complete.
 4. Load https://pprd.designsafe-ci.org/user-guide/.
+
+> [!TIP]
+> In the future, we will offer a dedicated test server. Task is pending [issue #61](https://github.com/DesignSafe-CI/DS-User-Guide/issues/61).
