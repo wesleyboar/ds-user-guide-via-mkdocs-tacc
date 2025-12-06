@@ -1,0 +1,9 @@
+services:
+  docs:
+    build: .
+    volumes:
+      - .:/docs
+    ports:
+      - 127.0.0.1:8000:8000
+    command: ["mkdocs", "serve", "--dev-addr", "0.0.0.0:8000", "--watch-theme", "--config-file", "/docs/mkdocs.yml"]
+    container_name: designsafe_user_guide
