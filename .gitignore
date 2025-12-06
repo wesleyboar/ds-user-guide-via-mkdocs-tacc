@@ -3,3 +3,10 @@ site/
 
 # os
 .DS_Store
+
+# python
+.python-version
+
+# ide
+.vs
+.vscode
