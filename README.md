@@ -1,3 +1,7 @@
+> [!TIP]
+> Moved to:
+> - https://github.com/DesignSafe-CI/DS-User-Guide/pull/240
+
 # DesignSafe-CI User-Guide
 
 DesignSafe-CI's user documentation at [designsafe-ci.org/user-guide](https://designsafe-ci.org/user-guide).
